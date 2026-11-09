@@ -48,6 +48,14 @@
             endBanner.style.display = 'none';
         }
 
+        var campaignImages = doc.querySelectorAll('#campaign .portrait-grid img');
+        if (campaignImages.length >= 2) {
+            campaignImages[0].src = '/assets/images/GG-%20CREME%20br%C3%BBl%C3%A9e%20%20NECKLACE%20ON%20MODEL.jpeg';
+            campaignImages[0].alt = 'Model wearing the Gummy Gem Creme Brulee necklace';
+            campaignImages[1].src = '/assets/images/GG-%20SEA%20GLASS%20NECKLACE%20ON%20MODEL.jpeg';
+            campaignImages[1].alt = 'Model wearing the Gummy Gem Sea Glass necklace';
+        }
+
         var page = doc.querySelector('main.page');
         if (page) {
             Array.prototype.slice.call(page.childNodes).forEach(function (node) {
