@@ -81,6 +81,219 @@ figcaption{font:400 12px/1.35 var(--body);color:#5c5350;margin-top:16px}
 .mobile-only{display:none}
 @media (max-width:980px){.container{padding-left:35px;padding-right:35px}.hero{height:560px}.case-label,.hero-content h1,.hero-deck,.hero-credit{left:35px}.hero-content h1{font-size:72px;top:190px}.hero-deck{font-size:20px;top:365px}.hero-logo{left:34%;width:135px;height:135px}.hero-model{width:60%;top:-4px;height:650px}.photo-note{left:42%;top:220px;width:230px}.photo-note img{height:245px}.story{gap:40px}.story .storycopy{padding-left:28px}.section-title{font-size:52px}.packaging{grid-template-columns:1fr .8fr 1.5fr;gap:18px}.packaging .section-title{font-size:47px}.packaging figure img,.packaging .pack-grid img{height:210px}.phone-shot img{height:460px}.portrait-grid img{height:240px}.collection-grid img{height:230px}.development{gap:26px}.development-cols>div{padding:0 15px}}
 @media (max-width:700px){.container{padding-left:22px;padding-right:22px}.hero{height:570px;min-height:0}.hero-model{width:66%;height:475px;right:-70px;top:-2px;object-position:center 13%;opacity:.87}.hero-wash{background:linear-gradient(90deg,#fcf9f6 0%,rgba(252,249,246,.98) 32%,rgba(252,249,246,.52) 66%,transparent 95%)}.hero-arc{width:390px;height:390px;left:42%;top:3px}.case-label{left:22px;top:24px;font-size:13px}.case-sub{font-size:9px}.hero-logo{left:auto;right:13px;top:20px;width:100px;height:100px}.hero-content h1{left:22px;top:155px;font-size:70px}.hero-deck{left:22px;top:320px;font-size:17px;max-width:190px}.hero-credit{left:22px;bottom:26px;font-size:13px}.hero-credit small{font-size:9px;letter-spacing:.1em}.photo-note{width:140px;left:auto;right:20px;top:280px;padding:5px 5px 9px}.photo-note img{height:152px}.hero-tag{display:none}.topic-strip{height:auto;grid-template-columns:1fr 1fr;padding:13px 10px;row-gap:12px}.topic-strip span{font-size:16px}.topic-strip span:nth-child(2){border-right:0}.section{padding-top:36px;padding-bottom:37px}.section-label{font-size:10px;letter-spacing:.16em;margin-bottom:17px}.section-title{font-size:43px}.story{display:block;min-height:0}.story .storycopy{margin-top:26px;border-left:1px solid var(--coral);padding-left:18px;font-size:17px}.web-head,.collection-head,.product-head,.campaign-head{display:block}.web-head .note,.collection-head .note,.product-head .note,.campaign-head .note{margin-top:24px;padding-left:18px;font-size:17px}.web-layout{grid-template-columns:1.8fr 1fr;gap:12px;margin-top:24px;align-items:center}.web-fig img{border-radius:9px}.phone-shot img{height:255px;border-radius:14px;border-width:3px}.desktop-shot img{aspect-ratio:1.4;object-position:top left}.web-fig figcaption{font-size:10px}.packaging{display:grid;grid-template-columns:1fr 1fr;gap:16px}.packaging>div:first-child{grid-column:span 2}.packaging .section-title{font-size:42px}.packaging figure img,.packaging .pack-grid img{height:165px}.packaging .pack-grid{grid-template-columns:1fr 1fr;gap:8px}.packaging figcaption{font-size:10px}.collection-grid,.product-grid,.portrait-grid{gap:8px;margin-top:24px}.collection-grid img,.portrait-grid img{height:175px}.product-grid img{height:125px}.collection-grid figcaption{font-size:10px}.product-grid figcaption{font-size:10px}.development{display:block}.development-cols{margin-top:23px;grid-template-columns:1fr;gap:15px}.development-cols>div{padding-left:20px}.development-cols h3{font-size:14px;margin-bottom:5px}.development-cols p{font-size:13px}.principles{font-size:15px;gap:10px}.end-banner .tagline{font-size:36px}.end-flex{grid-template-columns:1fr 1fr;gap:20px}.end-banner p{font-size:14px}.end-credits{padding-left:16px;font-size:13px}.end-credits span{font-size:12px}}
+
+/* GUMMY GEM — ORIGINAL LOGO DESIGN */
+.gg-identity {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.gg-identity-title {
+  font-family: var(--serif);
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  margin: 24px 0;
+}
+
+.gg-identity-title em {
+  color: var(--coral);
+  font-weight: 400;
+}
+
+.gg-identity-intro {
+  font-family: var(--body);
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 45px;
+}
+
+.gg-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin: 35px 0 55px;
+}
+
+.gg-logo-grid figure {
+  text-align: center;
+  margin: 0;
+}
+
+.gg-logo-grid img {
+  display: block;
+  width: min(100%, 340px);
+  height: auto;
+  margin: 0 auto 22px;
+}
+
+.gg-logo-grid figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gg-logo-grid figcaption strong {
+  color: #FA449C;
+  letter-spacing: 0.1em;
+}
+
+.gg-identity-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  padding: 35px;
+  background: #FFF3F5;
+  border-radius: 12px;
+}
+
+.gg-identity-notes h3 {
+  color: #FA449C;
+  font-family: var(--body);
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
+}
+
+.gg-identity-notes p {
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .gg-identity {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .gg-logo-grid,
+  .gg-identity-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .gg-logo-grid {
+    gap: 40px;
+  }
+
+  .gg-identity-notes {
+    padding: 24px;
+    gap: 25px;
+  }
+
+  .gg-identity-intro {
+    font-size: 17px;
+  }
+}
+
+
+/* GUMMY GEM BRAND COLOR PALETTE */
+
+.gg-palette {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.gg-palette h3 {
+  font-family: var(--body);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FA449C;
+  margin: 48px 0 26px;
+}
+
+.gg-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.gg-palette-grid:first-of-type {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 760px;
+}
+
+.gg-color {
+  text-align: center;
+  min-width: 0;
+}
+
+.gg-swatch {
+  width: min(100%, 160px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.gg-color strong {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #FA449C;
+}
+
+.gg-color span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.gg-color p {
+  max-width: 240px;
+  margin: 12px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gg-accents {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  row-gap: 36px;
+}
+
+.gg-accents .gg-swatch {
+  width: min(100%, 110px);
+}
+
+@media (max-width: 700px) {
+  .gg-palette {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .gg-palette-grid,
+  .gg-palette-grid:first-of-type,
+  .gg-accents {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+
+  .gg-swatch {
+    width: min(100%, 125px);
+  }
+
+  .gg-accents .gg-swatch {
+    width: min(100%, 90px);
+  }
+
+  .gg-color strong {
+    font-size: 12px;
+  }
+
+  .gg-color p {
+    font-size: 13px;
+  }
+}
+
 </style></head><body>
 <main class="page" id="top">
 <header class="hero">
@@ -102,6 +315,121 @@ figcaption{font:400 12px/1.35 var(--body);color:#5c5350;margin-top:16px}
   <div><span class="section-label">01 / BRAND STORY &amp; CREATIVE VISION</span><h2 class="section-title">Jewelry designed<br/>to <em>spark joy.</em></h2></div>
   <div class="storycopy"><p>Gummy Gem Studio is an independently developed jewelry brand built around colorful self-expression, playful design, and joyful personal style.</p><p>The brand world combines candy-inspired color, Austrian crystal jewelry, thoughtful product design, and optimistic digital merchandising.</p><p class="role">Founder / Jewelry Designer / Logo Designer /<br/> Creative Director / Product Photographer &amp; Videographer</p></div>
 </section>
+
+
+<section id="logo-design" class="container section gg-identity">
+  <span class="section-label">02 / ORIGINAL LOGO DESIGN</span>
+  <h2 class="gg-identity-title">A playful identity, <em>designed from scratch.</em></h2>
+
+  <p class="gg-identity-intro">
+    I designed the Gummy Gem Studio logo from scratch, selecting and customizing
+    soft, rounded lettering to reflect the candy-inspired name and colorful
+    gemstone collection.
+  </p>
+
+  <div class="gg-logo-grid">
+    <figure>
+      <img src="/assets/images/GG- PRIMARY LOGO MARK.png"
+           alt="Gummy Gem Studio primary Bubble Pink logo"
+           loading="lazy">
+      <figcaption>
+        <strong>PRIMARY LOGO</strong>
+        <span>Bubble Pink · Website · Packaging · Luxury Applications</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/images/GG- SECONDARY LOGO MARK.png"
+           alt="Gummy Gem Studio secondary Soft Peach logo"
+           loading="lazy">
+      <figcaption>
+        <strong>SECONDARY LOGO</strong>
+        <span>Soft Peach · Social Media · Marketing · Fun Launches</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="gg-identity-notes">
+    <div>
+      <h3>THE DESIGN DECISION</h3>
+      <p>
+        Rounded forms communicate approachability and playfulness.
+        The bold, customized lettering supports recognition, while
+        the sparkle detail reinforces the brand's jewelry identity.
+      </p>
+    </div>
+    <div>
+      <h3>TYPOGRAPHY</h3>
+      <p>
+        <strong>Logo:</strong> Customized rounded lettering informed by
+        Averta Soft, Sofia Pro Soft, and Nunito ExtraBold.
+      </p>
+      <p><strong>Headlines:</strong> Poppins ExtraBold — modern, bold, clean, and confident.</p>
+    </div>
+  </div>
+</section>
+
+<section id="color-palette" class="container section gg-palette">
+  <span class="section-label">03 / BRAND COLOR PALETTE</span>
+  <h2 class="gg-identity-title">
+    A joyful palette, <em>inspired by self-expression.</em>
+  </h2>
+  <p class="gg-identity-intro">
+    Gummy Gem Studio's palette was intentionally curated to feel playful,
+    optimistic, and feminine. Inspired by colorful crystals and candy-like
+    hues, the colors create a recognizable identity across packaging,
+    photography, and digital experiences.
+  </p>
+
+  <h3>Primary Brand Colors</h3>
+  <div class="gg-palette-grid">
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FA449C"></div>
+      <strong>Bubble Pink</strong>
+      <span>#FA449C</span>
+      <p>Expresses joy, confidence, creativity, and self-expression.</p>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FCA683"></div>
+      <strong>Soft Peach</strong>
+      <span>#FCA683</span>
+      <p>Adds warmth and approachability to the vibrant identity.</p>
+    </div>
+  </div>
+
+  <h3>Supporting Colors</h3>
+  <div class="gg-palette-grid">
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FFF9F6"></div>
+      <strong>Cream White</strong><span>#FFF9F6</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#D8B36B"></div>
+      <strong>Champagne Gold</strong><span>#D8B36B</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#2C2C2C"></div>
+      <strong>Warm Black</strong><span>#2C2C2C</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#F5F5F5"></div>
+      <strong>Soft Gray</strong><span>#F5F5F5</span>
+    </div>
+  </div>
+
+  <h3>Crystal-Inspired Accent Colors</h3>
+  <div class="gg-palette-grid gg-accents">
+    <div class="gg-color"><div class="gg-swatch" style="background:#E9D9FF"></div><strong>Crystal Aurora</strong><span>#E9D9FF</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#D784FF"></div><strong>Iridescent Lavender</strong><span>#D784FF</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#ECECEC"></div><strong>Crystal Clear</strong><span>#ECECEC</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#C6F26B"></div><strong>Electric Lime</strong><span>#C6F26B</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#57C6F2"></div><strong>Ocean Blue</strong><span>#57C6F2</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#FF8C7A"></div><strong>Neon Coral</strong><span>#FF8C7A</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#AEEFE1"></div><strong>Soft Mint</strong><span>#AEEFE1</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#D8C3F2"></div><strong>Lavender</strong><span>#D8C3F2</span></div>
+  </div>
+</section>
+
 <section id="website" class="container section">
   <div class="web-head"><div><span class="section-label">02 / WEBSITE DESIGN &amp; DIGITAL BRAND EXPERIENCE</span><h2 class="section-title">A brand experience<br/>that speaks <em>at first glance.</em></h2></div><p class="note">Immediate brand recognition,<br/>from product to personality.</p></div>
   <div class="web-layout">
