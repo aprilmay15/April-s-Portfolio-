@@ -192,6 +192,108 @@ figcaption{font:400 12px/1.35 var(--body);color:#5c5350;margin-top:16px}
 }
 
 
+/* GUMMY GEM BRAND COLOR PALETTE */
+
+.gg-palette {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.gg-palette h3 {
+  font-family: var(--body);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FA449C;
+  margin: 48px 0 26px;
+}
+
+.gg-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.gg-palette-grid:first-of-type {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 760px;
+}
+
+.gg-color {
+  text-align: center;
+  min-width: 0;
+}
+
+.gg-swatch {
+  width: min(100%, 160px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.gg-color strong {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #FA449C;
+}
+
+.gg-color span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.gg-color p {
+  max-width: 240px;
+  margin: 12px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gg-accents {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  row-gap: 36px;
+}
+
+.gg-accents .gg-swatch {
+  width: min(100%, 110px);
+}
+
+@media (max-width: 700px) {
+  .gg-palette {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .gg-palette-grid,
+  .gg-palette-grid:first-of-type,
+  .gg-accents {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+
+  .gg-swatch {
+    width: min(100%, 125px);
+  }
+
+  .gg-accents .gg-swatch {
+    width: min(100%, 90px);
+  }
+
+  .gg-color strong {
+    font-size: 12px;
+  }
+
+  .gg-color p {
+    font-size: 13px;
+  }
+}
+
 </style></head><body>
 <main class="page" id="top">
 <header class="hero">
@@ -264,6 +366,67 @@ figcaption{font:400 12px/1.35 var(--body);color:#5c5350;margin-top:16px}
       </p>
       <p><strong>Headlines:</strong> Poppins ExtraBold — modern, bold, clean, and confident.</p>
     </div>
+  </div>
+</section>
+
+<section id="color-palette" class="container section gg-palette">
+  <span class="section-label">03 / BRAND COLOR PALETTE</span>
+  <h2 class="gg-identity-title">
+    A joyful palette, <em>inspired by self-expression.</em>
+  </h2>
+  <p class="gg-identity-intro">
+    Gummy Gem Studio's palette was intentionally curated to feel playful,
+    optimistic, and feminine. Inspired by colorful crystals and candy-like
+    hues, the colors create a recognizable identity across packaging,
+    photography, and digital experiences.
+  </p>
+
+  <h3>Primary Brand Colors</h3>
+  <div class="gg-palette-grid">
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FA449C"></div>
+      <strong>Bubble Pink</strong>
+      <span>#FA449C</span>
+      <p>Expresses joy, confidence, creativity, and self-expression.</p>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FCA683"></div>
+      <strong>Soft Peach</strong>
+      <span>#FCA683</span>
+      <p>Adds warmth and approachability to the vibrant identity.</p>
+    </div>
+  </div>
+
+  <h3>Supporting Colors</h3>
+  <div class="gg-palette-grid">
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#FFF9F6"></div>
+      <strong>Cream White</strong><span>#FFF9F6</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#D8B36B"></div>
+      <strong>Champagne Gold</strong><span>#D8B36B</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#2C2C2C"></div>
+      <strong>Warm Black</strong><span>#2C2C2C</span>
+    </div>
+    <div class="gg-color">
+      <div class="gg-swatch" style="background:#F5F5F5"></div>
+      <strong>Soft Gray</strong><span>#F5F5F5</span>
+    </div>
+  </div>
+
+  <h3>Crystal-Inspired Accent Colors</h3>
+  <div class="gg-palette-grid gg-accents">
+    <div class="gg-color"><div class="gg-swatch" style="background:#E9D9FF"></div><strong>Crystal Aurora</strong><span>#E9D9FF</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#D784FF"></div><strong>Iridescent Lavender</strong><span>#D784FF</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#ECECEC"></div><strong>Crystal Clear</strong><span>#ECECEC</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#C6F26B"></div><strong>Electric Lime</strong><span>#C6F26B</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#57C6F2"></div><strong>Ocean Blue</strong><span>#57C6F2</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#FF8C7A"></div><strong>Neon Coral</strong><span>#FF8C7A</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#AEEFE1"></div><strong>Soft Mint</strong><span>#AEEFE1</span></div>
+    <div class="gg-color"><div class="gg-swatch" style="background:#D8C3F2"></div><strong>Lavender</strong><span>#D8C3F2</span></div>
   </div>
 </section>
 
